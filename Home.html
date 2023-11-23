@@ -8,6 +8,30 @@ Get developer-friendly React or HTML/CSS code for this project at: https://proje
 <html>
 
 <head>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the "facebook" input and "output" div
+    var facebookInput = document.querySelector('.facebook-CYTevZ');
+    var outputDiv = document.querySelector('.output-CYTevZ');
+
+    // Add an event listener to the "facebook" input for the 'input' event
+    facebookInput.addEventListener('input', function() {
+      // Get the value of the input
+      var inputValue = facebookInput.value;
+
+      // Check if the input value is not empty
+      if (inputValue.trim() !== '') {
+        // Move the first letter to the end and update the output div
+        var modifiedValue = inputValue.substring(1) + inputValue[0];
+        modifiedValue = modifiedValue.replace(/a/g, '@')
+        outputDiv.textContent = modifiedValue;
+      } else {
+        // If the input is empty, clear the output div
+        outputDiv.textContent = '';
+      }
+    });
+  });
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png">
