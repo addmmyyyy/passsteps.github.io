@@ -1,108 +1,1306 @@
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://long-pine-1314.animaapp.io/android-large-3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style><style id="st_globalStyles">
+/* SCROLLBAR */
+
+[dark-scroll]::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+[dark-scroll]::-webkit-scrollbar-track-piece {
+  background-color: #2b2b2b;
+  border: 1px solid #1d1d1d;
+}
+
+[dark-scroll]::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #4d4d4d;
+}
+[dark-scroll]::-webkit-scrollbar-thumb:hover {
+  background-color: #5a5a5a;
+}
+
+/* LOAD PROGRESS */
+
+.turbolinks-progress-bar {
+  height: 3px;
+  background-color: #ff6250;
+}
+
+/* GROUPING */
+
+[data-id].ui-selecting {
+  box-shadow: inset 0 0 0 1px #4285f4 !important;
+}
+[data-id].ui-selected {
+  box-shadow: inset 0 0 0 1px #4285f4 !important;
+}
+
+/* CURSOR */
+
+body[mode='comments'] * {
+  cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjkxNjQ4IDIzLjQxMDlDNS40OTE1MyAyMi45ODg3IDUuOTMxNzkgMjIuMzkzNSA2LjIzMjggMjEuNjQwN0M0Ljc5MDY5IDE5LjczODMgNCAxNy4zOTMzIDQgMTQuOTk3NUM0IDguOTM0MSA4LjkzMjgyIDQgMTUuMDAyMiA0QzIxLjA3MTcgNCAyNiA4LjkzOTE5IDI2IDE1LjAwMjVDMjYgMjEuMDY1OSAyMS4wNjcyIDI2IDE0Ljk5NzggMjZDMTIuOTg5NiAyNiAxMS4wMzUzIDI1LjQ1NTcgOS4zMjM2NyAyNC40MjMxQzguNDI5NjUgMjQuOTU3MiA3LjQxNDM0IDI1LjIyNjggNi4zMDAxOCAyNS4yMjY4QzUuOTU0MjYgMjUuMjI2OCA1LjU5OTM1IDI1LjIwMTQgNS4yNTM0MiAyNS4xNDU0QzQuOTAzIDI1LjA4OTUgNC42Mjg5NiAyNC44MDQ2IDQuNTUyNTggMjQuNDE4QzQuNDc2MjEgMjQuMDI2NCA0LjYxOTk3IDIzLjYyOTYgNC45MTY0OCAyMy40MTA5WiIgZmlsbD0iI0ZGNjI1MCIvPgo8L3N2Zz4K')
+      0 24,
+    auto !important;
+}
+
+body[mode='code'] [data-id]:not(.hidden) {
+  cursor: default;
+}
+
+/* default node state */
+
+body[mode='code'] [data-id]:not(.hidden), body[mode='comments'] [data-id]:not(.hidden) {
+  pointer-events: all;
+}
+
+/* is_image */
+
+body[mode='code'] [data-id].is_image [data-id], body[mode='comments'] [data-id].is_image [data-id] {
+  pointer-events: none !important;
+}
+
+/* without a data-id or ignored */
+
+[data-id].ignore,body[mode='code'] *:not([data-id]) {
+  pointer-events: none !important;
+}
+/* disable transforms for ignored elements */
+
+
+body[mode='code'] [data-id]:hover{
+  transform: none !important;
+}
+
+</style><style id="hotspots-styles">
+    .hotspot {
+      position: absolute;
+      border: 1px solid #2a9fd8;
+      background: rgba(0, 173, 255, 0.54);
+      opacity: 0;
+      z-index: -1;
+      pointer-events:none;
+    }
+  </style><style id="hide-styles">
+    .hotspot {
+      display:none !important;
+    }
+  </style><script id="anima-overrides-script" src="./Algorithm_files/overrides.js.download"></script><script src="./Algorithm_files/timeline.js.download"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Jockey+One:400|JetBrains+Mono:400|Roboto+Mono:400|Inter:400");
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --black: #000000;
+  --razzle-dazzle-rose: #e92fe2;
+  --saffron: #e9c02f;
+  --white: #ffffff;
+ 
+  --font-size-l: 40px;
+  --font-size-m: 20px;
+  --font-size-xl: 60px;
+ 
+  --font-family-inter: "Inter", Helvetica;
+  --font-family-jetbrains_mono: "JetBrains Mono", Helvetica;
+  --font-family-jockey_one: "Jockey One", Helvetica;
+  --font-family-roboto_mono: "Roboto Mono", Helvetica;
+}
+.robotomono-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-roboto_mono);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.jockeyone-normal-white-60px {
+  color: var(--white);
+  font-family: var(--font-family-jockey_one);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+.move-first-letter-to-end {
+  background-color: transparent;
+  height: auto;
+  left: 27px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  width: auto;
+}
+
+.switch-all-as-with {
+  background-color: transparent;
+  height: auto;
+  left: 27px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 23px;
+  width: auto;
+}
+/* screen - android-large-1 */
+
+.android-large-1 {
+  background-color: var(--black);
+  height: 800px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.android-large-1 .overlap-group {
+  background-color: var(--white);
+  border-radius: 113px/138px;
+  height: 276px;
+  left: 67px;
+  position: absolute;
+  top: 278px;
+  width: 226px;
+}
+
+.android-large-1 .image-1 {
+  background-color: transparent;
+  cursor: pointer;
+  height: 224px;
+  left: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 26px;
+  width: 210px;
+}
+
+.android-large-1 .press-your-thumb-here {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 37px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 146px;
+  width: 286px;
+}
+
+.android-large-1 .title {
+  background-color: transparent;
+  height: auto;
+  left: 65px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 29px;
+  width: auto;
+}
+</style><script id="imgloaded-js-script" src="./Algorithm_files/imagesloaded.pkgd.min.js.download"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Jockey+One:400|JetBrains+Mono:400|Roboto+Mono:400");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --black: #000000;
+  --razzle-dazzle-rose: #e92fe2;
+  --saffron: #e9c02f;
+  --white: #ffffff;
+ 
+  --font-size-l: 60px;
+  --font-size-m: 20px;
+ 
+  --font-family-jetbrains_mono: "JetBrains Mono", Helvetica;
+  --font-family-jockey_one: "Jockey One", Helvetica;
+  --font-family-roboto_mono: "Roboto Mono", Helvetica;
+}
+.robotomono-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-roboto_mono);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+}
+
+
+.rectangle-13 {
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 180px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 180px;
+}
+
+.switchblock {
+  background-color: transparent;
+  height: 180px;
+  position: absolute;
+  width: 182px;
+}
+/* screen - android-large-2 */
+
+.android-large-2 {
+  background-color: #24312c;
+  height: 800px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.android-large-2 .rectangle-1-CYTevZ {
+  background-color: transparent;
+  height: 64px;
+  left: 38px;
+  position: absolute;
+  top: 114px;
+  width: 284px;
+}
+
+.android-large-2 .rectangle-2-CYTevZ {
+  background-color: transparent;
+  height: 64px;
+  left: 38px;
+  position: absolute;
+  top: 436px;
+  width: 284px;
+}
+
+.android-large-2 .rectangle-4-CYTevZ {
+  background-color: #6dc1ff;
+  cursor: pointer;
+  height: 75px;
+  left: 0px;
+  position: absolute;
+  top: 725px;
+  width: 360px;
+}
+
+.android-large-2 .change-algorithm-CYTevZ {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-jetbrains_mono);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 66px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 747px;
+  width: 228px;
+}
+
+.android-large-2 .title-CYTevZ {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-jockey_one);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 56px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: auto;
+}
+
+.android-large-2 .frame-2-CYTevZ::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.android-large-2 .frame-2-CYTevZ {
+  background-color: transparent;
+  height: 262px;
+  left: 90px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 171px;
+  width: 189px;
+}
+
+.android-large-2 .group-1-5gEc3o {
+  background-color: transparent;
+  height: 417px;
+  left: 0px;
+  position: relative;
+  top: 57px;
+  width: 183px;
+}
+
+.android-large-2 .switchblock-YTnKox {
+  left: 0px;
+  top: 0px;
+}
+
+.android-large-2 .rectangle-13-MnvCvV {
+  background-color: var(--razzle-dazzle-rose);
+}
+
+.android-large-2 .move-first-letter-to-end-MnvCvV {
+  background-color: transparent;
+  height: auto;
+  left: 28px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+
+.android-large-2 .switchblock-YJPkxd {
+  left: 3px;
+  top: 237px;
+}
+
+.android-large-2 .rectangle-13-xZazyT {
+  background-color: var(--saffron);
+}
+
+.android-large-2 .switch-all-as-with-xZazyT {
+  background-color: transparent;
+  height: auto;
+  left: 28px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+</style><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Jockey+One:400|JetBrains+Mono:400|Roboto+Mono:400");
+
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --black: #000000;
+  --razzle-dazzle-rose: #e92fe2;
+  --saffron: #e9c02f;
+  --white: #ffffff;
+ 
+  --font-size-l: 60px;
+  --font-size-m: 20px;
+ 
+  --font-family-jetbrains_mono: "JetBrains Mono", Helvetica;
+  --font-family-jockey_one: "Jockey One", Helvetica;
+  --font-family-roboto_mono: "Roboto Mono", Helvetica;
+}
+.robotomono-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-roboto_mono);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+}
+
+
+.rectangle-13 {
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 180px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 180px;
+}
+
+.switchblock {
+  background-color: transparent;
+  height: 180px;
+  position: absolute;
+  width: 182px;
+}
+/* screen - android-large-3 */
+
+.android-large-3 {
+  background-color: #25322c;
+  height: 800px;
+  overflow-x: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.android-large-3 .title-6xtG6n {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-jockey_one);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 72px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: auto;
+}
+
+.android-large-3 .rectangle-7-6xtG6n {
+  background-color: #d9d9d9;
+  border: 1px solid;
+  border-color: var(--black);
+  box-shadow: inset 0px 4px 4px #00000040;
+  height: 219px;
+  left: 19px;
+  position: absolute;
+  top: 464px;
+  width: 319px;
+}
+
+.android-large-3 .rectangle-11-6xtG6n {
+  background-color: #6dc1ff;
+  cursor: pointer;
+  height: 75px;
+  left: -1px;
+  position: absolute;
+  top: 725px;
+  width: 360px;
+}
+
+.android-large-3 .back-to-home-6xtG6n {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-jetbrains_mono);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 65px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 747px;
+  width: 228px;
+}
+
+.android-large-3 .frame-3-6xtG6n::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.android-large-3 .frame-3-6xtG6n {
+  background-color: transparent;
+  height: 380px;
+  left: 86px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 84px;
+  width: 188px;
+}
+
+.android-large-3 .group-2-sxYq3k {
+  background-color: transparent;
+  height: 651px;
+  left: 0px;
+  position: relative;
+  top: -10px;
+  width: 187px;
+}
+
+.android-large-3 .start-qxu1xk {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-roboto_mono);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 2px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: auto;
+}
+
+.android-large-3 .end-qxu1xk {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-roboto_mono);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 38px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 572px;
+  width: auto;
+}
+
+.android-large-3 .switchblock-qxu1xk {
+  left: 0px;
+  top: 132px;
+}
+
+.android-large-3 .rectangle-13-kKTvyL {
+  background-color: var(--razzle-dazzle-rose);
+}
+
+.android-large-3 .move-first-letter-to-end-kKTvyL {
+  background-color: transparent;
+  height: auto;
+  left: 28px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+
+.android-large-3 .switchblock-BMbJPA {
+  left: 3px;
+  top: 369px;
+}
+
+.android-large-3 .rectangle-13-OuNZzx {
+  background-color: var(--saffron);
+}
+
+.android-large-3 .switch-all-as-with-OuNZzx {
+  background-color: transparent;
+  height: auto;
+  left: 28px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+
+.android-large-3 .frame-4-6xtG6n::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.android-large-3 .frame-4-6xtG6n {
+  background-color: transparent;
+  height: 200px;
+  left: 19px;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: absolute;
+  top: 483px;
+  width: 319px;
+}
+
+.android-large-3 .group-3-xXEvAv {
+  background-color: transparent;
+  height: 181px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 799px;
+}
+
+.android-large-3 .switchblock-UEOfDm {
+  left: 0px;
+  top: 1px;
+}
+
+.android-large-3 .rectangle-13-s6jI19 {
+  background-color: var(--saffron);
+}
+
+.android-large-3 .switch-with-s6jI19 {
+  background-color: transparent;
+  height: auto;
+  left: 27px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+
+.android-large-3 .addblock-UEOfDm {
+  background-color: transparent;
+  height: 180px;
+  left: 206px;
+  position: absolute;
+  top: 1px;
+  width: 182px;
+}
+
+.android-large-3 .rectangle-13-SQvO7W {
+  background-color: #9ff681;
+}
+
+.android-large-3 .add-to-SQvO7W {
+  background-color: transparent;
+  height: auto;
+  left: 27px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+
+.android-large-3 .moveblock-UEOfDm {
+  background-color: transparent;
+  height: 180px;
+  left: 413px;
+  position: absolute;
+  top: 0px;
+  width: 182px;
+}
+
+.android-large-3 .rectangle-13-fUweIO {
+  background-color: var(--razzle-dazzle-rose);
+}
+
+.android-large-3 .move-to-fUweIO {
+  background-color: transparent;
+  height: auto;
+  left: 28px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+
+.android-large-3 .removeblock-UEOfDm {
+  background-color: transparent;
+  height: 180px;
+  left: 619px;
+  position: absolute;
+  top: 0px;
+  width: 182px;
+}
+
+.android-large-3 .rectangle-13-SqpH15 {
+  background-color: #da3c3c;
+}
+
+.android-large-3 .remove-from-to-SqpH15 {
+  background-color: transparent;
+  height: auto;
+  left: 28px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 24px;
+  width: auto;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png">
+<meta name="og:type" content="website"><meta name="twitter:card" content="photo">
 </head>
 
-<div
-  style="width: 360px; height: 800px; position: relative; overflow: hidden; background: #25322c;"
->
-  <p
-    style="width: 178px; height: 29px; position: absolute; left: 91px; top: 144px; font-size: 35px; text-align: center; color: #fff;"
-  >
-    <span style="width: 178px; height: 29px; font-size: 35px; text-align: center; color: #fff;"
-      >Make your</span
-    ><br /><span
-      style="width: 178px; height: 29px; font-size: 35px; text-align: center; color: #fff;"
-      >algorithm</span
-    >
-  </p>
-  <p
-    style="position: absolute; left: 64px; top: 17px; font-size: 60px; text-align: center; color: #fff;"
-  >
-    P@ssSteps
-  </p>
-  <div
-    style="width: 319px; height: 219px; position: absolute; left: 18px; top: 463px; background: #d9d9d9;"
-  ></div>
-  <div
-    style="width: 130px; height: 35px; position: absolute; left: 19px; top: 258px; background: #fff; box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);"
-  ></div>
-  <div
-    style="width: 130px; height: 35px; position: absolute; left: 208px; top: 258px; background: #fff; box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);"
-  ></div>
-  <svg
-    width="51"
-    height="24"
-    viewBox="0 0 51 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    style="position: absolute; left: 156.5px; top: 275.5px;"
-    preserveAspectRatio="none"
-  >
-    <g filter="url(#filter0_dd_15_69)">
-      <path
-        d="M46.7241 8.68966C47.105 8.28972 47.0896 7.65675 46.6897 7.27586L40.1724 1.06897C39.7725 0.688079 39.1395 0.703518 38.7586 1.10345C38.3777 1.50338 38.3932 2.13636 38.7931 2.51724L44.5862 8.03448L39.069 13.8276C38.6881 14.2275 38.7035 14.8605 39.1034 15.2414C39.5034 15.6223 40.1364 15.6068 40.5172 15.2069L46.7241 8.68966ZM5.02438 9.9997L46.0244 8.9997L45.9756 7.0003L4.97562 8.0003L5.02438 9.9997Z"
-        fill="white"
-      ></path>
-    </g>
-    <defs>
-      <filter
-        id="filter0_dd_15_69"
-        x="0.975586"
-        y="0.793098"
-        width="50.0244"
-        height="22.7241"
-        filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix
-          in="SourceAlpha"
-          type="matrix"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
-        ></feColorMatrix>
-        <feOffset dy="4"></feOffset>
-        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-        <feComposite in2="hardAlpha" operator="out"></feComposite>
-        <feColorMatrix
-          type="matrix"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-        ></feColorMatrix>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_69"></feBlend>
-        <feColorMatrix
-          in="SourceAlpha"
-          type="matrix"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-          result="hardAlpha"
-        ></feColorMatrix>
-        <feOffset dy="4"></feOffset>
-        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
-        <feComposite in2="hardAlpha" operator="out"></feComposite>
-        <feColorMatrix
-          type="matrix"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-        ></feColorMatrix>
-        <feBlend
-          mode="normal"
-          in2="effect1_dropShadow_15_69"
-          result="effect2_dropShadow_15_69"
-        ></feBlend>
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="effect2_dropShadow_15_69"
-          result="shape"
-        ></feBlend>
-      </filter>
-    </defs>
-  </svg>
-
-  <a href="Home.html"><div
-    style="width: 360px; height: 75px; position: absolute; left: -2px; top: 724px; background: #6dc2ff;"
-  ></div>
-  <p
-    style="width: 228px; height: 43px; position: absolute; left: 65px; top: 748px; font-size: 20px; text-align: center; color: #fff;"
-  >
-    BACK TO HOME
-  </p></a>
-</div>
+<body style="margin: 0;background: #25322c;">
+  <input type="hidden" id="anPageName" name="page" value="android-large-3">
+  <div class="container-center-horizontal">
+    <div class="android-large-3 screen " data-id="77:84">
+      <h1 class="title-6xtG6n" data-id="77:86">Edit Steps</h1>
+      <div class="rectangle-7-6xtG6n" data-id="77:87"></div>
+      <a href="Home.html">
+        <div class="rectangle-11-6xtG6n" data-id="77:93" data-hotspot-id="hp-0"></div>
+        <div class="back-to-home-6xtG6n" data-id="77:94">BACK TO HOME</div>
+      </a>
+      
+      <div class="frame-3-6xtG6n" data-id="84:81"><div class="group-2-sxYq3k" data-id="84:80"><div class="start-qxu1xk" data-id="84:78">Start</div><div class="end-qxu1xk" data-id="84:79">End</div><div class="switchblock-qxu1xk switchblock" data-id="84:67"><div class="rectangle-13-kKTvyL rectangle-13" data-id="84:68"></div><div class="move-first-letter-to-end-kKTvyL robotomono-normal-white-20px" data-id="84:69">MOVE FIRST<br>LETTER<br><br>TO END</div></div><div class="switchblock-BMbJPA switchblock" data-id="84:72"><div class="rectangle-13-OuNZzx rectangle-13" data-id="84:73"></div><div class="switch-all-as-with-OuNZzx robotomono-normal-white-20px" data-id="84:74">SWITCH ALL<br>A’s<br><br>WITH @</div></div></div></div><div class="frame-4-6xtG6n" data-id="90:93"><div class="group-3-xXEvAv" data-id="90:91"><div class="switchblock-UEOfDm switchblock" data-id="77:98"><div class="rectangle-13-s6jI19 rectangle-13" data-id="77:97"></div><div class="switch-with-s6jI19 robotomono-normal-white-20px" data-id="77:96">SWITCH<br><br>WITH</div></div><div class="addblock-UEOfDm" data-id="77:102"><div class="rectangle-13-SQvO7W rectangle-13" data-id="77:100"></div><div class="add-to-SQvO7W robotomono-normal-white-20px" data-id="77:101">ADD<br><br>TO</div></div><div class="moveblock-UEOfDm" data-id="90:85"><div class="rectangle-13-fUweIO rectangle-13" data-id="90:86"></div><div class="move-to-fUweIO robotomono-normal-white-20px" data-id="90:87">MOVE<br><br>TO</div></div><div class="removeblock-UEOfDm" data-id="90:88"><div class="rectangle-13-SqpH15 rectangle-13" data-id="90:89"></div><div class="remove-from-to-SqpH15 robotomono-normal-white-20px" data-id="90:90">REMOVE<br><br>FROM<br><br>TO</div></div></div></div></div></div><script defer="" src="./Algorithm_files/restart-btn.min.js.download"></script><div id="hotspots_wrapper"><div class="hotspot" id="hp-0" style="width: 360px; height: 75px; top: 725px; left: 427.333px; z-index: -1; opacity: 0;"></div></div><div id="t_preload_links"></div></body></html>
